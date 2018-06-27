@@ -1,3 +1,42 @@
+Que:1 Create a generic sorting function?
+Ans:1
+package movies;
+import static java.util.Arrays.sort;
+public  class GenericSort {
+    
+static <T>void print(T array[])
+{
+for(T var:array)
+{
+System.out.print(" "+var);
+}
+}
+public static void main(String args[])
+{
+Character array1[]={'T','A','S','V','I','R'};
+Integer array2[]={3,5,6,3,4,6,4,7,34,1,31,41};
+Double array3[]={2.3,3.4,6.7,3.4,7.9};
+
+System.out.println("Character Array before Sorting");
+print(array1);
+System.out.println("\nCharacter Array before Sorting");
+sort(array1);
+print(array1);
+
+System.out.println("Integer Array before Sorting");
+print(array1);
+System.out.println("\nInteger Array before Sorting");
+sort(array2);
+print(array2);
+
+System.out.println("Double Array before Sorting");
+print(array1);
+System.out.println("\nDouble Array before Sorting");
+sort(array3);
+print(array3);
+}
+}
+
 Que:3 Create a Generic function?
 Ans:3
 package sumgeneric;
